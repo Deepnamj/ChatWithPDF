@@ -1,5 +1,6 @@
 ## Project Title
 **ChatWithPDF — RAG-Based PDF Question Answering System**
+
 An AI chatbot that lets users upload any PDF and ask questions about it using RAG — powered by LangChain, OpenAI, and ChromaDB.
 
 ---
