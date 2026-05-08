@@ -15,7 +15,7 @@ Technical Description
 
 ---
 
-## Tech Stack (for skills section)
+## Tech Stack
 
 | Category | Tools |
 |---|---|
