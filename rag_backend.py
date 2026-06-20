@@ -78,7 +78,10 @@ def index_pdf(pdf_path: str) -> Chroma:
     chunks = text_splitter.split_documents(pages)
 
     # Step 3: Create embeddings using OpenAI
-    embeddings = OpenAIEmbeddings(openai_api_key=OPENAI_API_KEY)
+    embeddings = OpenAIEmbeddings(
+                    model="text-embedding-3-small",
+                    openai_api_key=OPENAI_API_KEY
+    )
 
     # Step 4: Store chunks as vectors in ChromaDB
     db_chroma = Chroma.from_documents(chunks, embeddings, persist_directory=CHROMA_PATH)
