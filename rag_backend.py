@@ -3,7 +3,6 @@
 # - Loading and indexing the PDF
 # - Retrieving relevant chunks
 # - Generating answers using OpenAI
-
 import os
 from langchain_community.document_loaders import PyPDFLoader          # reads PDF files
 from langchain_text_splitters import RecursiveCharacterTextSplitter    # splits text into chunks
